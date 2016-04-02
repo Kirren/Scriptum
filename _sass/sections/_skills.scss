@@ -1,0 +1,30 @@
+#skills{
+	.wrapper{
+		height: 720px;
+		@include clearfix;
+		h2{padding-top: 75px;}
+		.skill-lockup{
+			padding: 80px 6.4% 0;
+			.skill-unit {
+				width: inherit;
+				margin-bottom: 50px;
+				.skill-label{margin-bottom: 33px;}
+				.skill-icons {
+					font-size: 0;
+					span {
+						display: inline-block;
+						width: 1%;
+						height: 35px;
+						background-color: black;
+					}
+					@for $i from 1 through 100 {
+						&.skill-#{$i} span:nth-child(n+#{$i + 1}) {
+							@extend %skill-color;
+						}
+					}
+					%skill-color {background: #f3f3f3;}
+				}
+			}
+		}	
+	}
+}

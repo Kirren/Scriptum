@@ -1,0 +1,78 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+@import "bourbon";
+
+// Variables
+
+$works: {% for project in site.data.settings.works %} "{{ work.folder }}", {% endfor %};
+
+
+$base-font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+$secondary-font-family: "Silent Lips";
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+%gradient-bg{
+	background: -moz-linear-gradient(360deg, rgba(243,243,243,1) 0%, rgba(243,243,243,1) 1%, rgba(255,255,255,1) 100%); /* ff3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(243,243,243,1)), color-stop(1%, rgba(243,243,243,1)), color-stop(100%, rgba(255,255,255,1))); /* safari4+,chrome */
+	background: -webkit-linear-gradient(360deg, rgba(243,243,243,1) 0%, rgba(243,243,243,1) 1%, rgba(255,255,255,1) 100%); /* safari5.1+,chrome10+ */
+	background: -o-linear-gradient(360deg, rgba(243,243,243,1) 0%, rgba(243,243,243,1) 1%, rgba(255,255,255,1) 100%); /* opera 11.10+ */
+	background: -ms-linear-gradient(360deg, rgba(243,243,243,1) 0%, rgba(243,243,243,1) 1%, rgba(255,255,255,1) 100%); /* ie10+ */
+	background: linear-gradient(90deg, rgba(243,243,243,1) 0%, rgba(243,243,243,1) 1%, rgba(255,255,255,1) 100%); /* w3c */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f3f3', endColorstr='#ffffff',GradientType=1 ); /* ie6-9 */
+}
+
+$text-color:       #1a2631;
+$background-color: #f3f3f3;
+
+$accent-grey:      #c6c6c6;
+$accent-grey-light:lighten($accent-grey, 40%);
+$accent-grey-dark: #6c6c6c;
+$accent-dark-blue: #1a2631;
+
+// Width of the content area
+$content-width:    1920px;
+
+$on-palm:          800px;
+$on-laptop:        1310px;
+$on-desktop:       1850px;
+
+
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+	@media screen and (max-width: $device) {
+		@content;
+	}
+}
+
+@mixin optional-at-root($sel) {
+	@at-root #{if(not &, $sel, selector-append(&, $sel))} {@content;}
+}
+@mixin placeholder {
+	@include optional-at-root('::-webkit-input-placeholder') {@content;}
+	@include optional-at-root(':-moz-placeholder') {@content;}
+	@include optional-at-root('::-moz-placeholder') {@content;}
+	@include optional-at-root(':-ms-input-placeholder') {@content;}
+}
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "base",
+		"fonts",
+		"layout",
+		"sections/sections-dir";
+		

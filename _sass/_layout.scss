@@ -1,0 +1,38 @@
+// Container settings
+.wrapper{width: inherit;}
+section{
+	margin-top: 35px;
+	width: inherit;
+	@extend %gradient-bg;
+}
+
+// Text settings
+h2, h3{
+	text:{
+		transform: lowercase;
+		align: center;
+	}
+}
+h2{font-size: 45px;}
+
+h3{font-size: 38px;}
+
+.long-shadow{
+	text-shadow:#f0f0f0 1px 1px,
+				#f0f0f0 2px 2px,
+				#f0f0f0 3px 3px,
+				#f0f0f0 4px 4px,
+				#f0f0f0 5px 5px,
+				#f0f0f0 6px 6px,
+				#f0f0f0 7px 7px,
+				#f0f0f0 8px 8px,
+				#f0f0f0 9px 9px,
+				#f0f0f0 10px 10px,
+				#f0f0f0 11px 11px,
+				#f0f0f0 12px 12px,
+				#f0f0f0 13px 13px,
+				#f0f0f0 14px 14px,
+				#f0f0f0 15px 15px;
+}
+
+a, h2, h3, h6, .skill-label, p.text{color: $accent-dark-blue;}

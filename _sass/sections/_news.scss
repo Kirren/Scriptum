@@ -1,0 +1,41 @@
+#news{
+	.wrapper{
+		padding: 130px 6.4%;
+		.articles-wrapper{
+			padding-top: 80px;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			.article{
+				width: 25%;
+				display: flex;
+				flex-direction: column;
+				margin: 0 15px;
+				.icon{
+					height: 15px;
+					width: 15px; 
+				}
+				.author, .date{
+					font:{
+						family: arial;
+						size: 13px;
+					}
+					text-transform: capitalize;
+					padding-top: 18px;
+					margin-right: 35px;
+				}
+				h6{font-size: 14px;}
+				.text{
+					color: #6c6c6c;
+					text-transform: initial;
+					letter-spacing: 1.5px;
+					font:{
+						family: arial;
+						size: 14px;
+					}
+				}
+				a{color: #979797;}
+			}
+		}
+	}
+}

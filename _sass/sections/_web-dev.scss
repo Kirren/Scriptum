@@ -1,0 +1,52 @@
+#web-dev{
+	.wrapper{
+		height: 800px;
+		padding: 0px;
+	}
+	.wd-elem{
+		width: 49%;
+		height: inherit;
+		display: flex;
+	}
+	.bg{
+		float: left;
+		background: url(../img/wd-title.png) no-repeat center,
+					url(../img/wd-bg.jpg) no-repeat center;
+		vertical-align: middle;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.links{
+		float: right;
+
+		.links-wrapper{
+			padding: 120px 14.8%;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			align-items: center;
+		}
+		.reference{
+			height: 180px;
+			width: 50%;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			a{padding-top: 35px;}
+			&:hover{
+				background-color: #f0f0f0;
+				cursor: pointer;
+			}
+		}
+	}
+	img{
+		display: block;
+		height: 60px;
+		width: 60px;
+		margin: 0 auto;
+	}
+}

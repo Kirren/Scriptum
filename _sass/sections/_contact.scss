@@ -1,0 +1,66 @@
+#contact{
+	height: 1060px;
+	h3{padding-top: 130px;}
+	form{
+		padding-top: 120px;
+		max-width: 964px;
+		margin: 0 auto;
+		fieldset{height: 65px;}
+		textarea{
+			height: 363px;
+			resize: none;
+		}
+		fieldset, textarea{
+			width: 100%;
+			border: none;
+			margin-bottom: 30px;
+			padding: 0;
+		}
+		[type="text"]{
+			display: inline-block;
+			width: 48%;
+		}
+		[type="email"]{width: 100%;}
+		[type="submit"]{
+			background-color: transparent;
+			color: #c0c0c0;
+			&:hover{
+				background-color: #efefef;
+				cursor: pointer;
+			}
+		}
+		[name="name"]{float: left;}
+		[name="surname"]{float: right;}
+		input{height: 65px;}
+		input, textarea{
+			border: none;
+			background-color: #efefef;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			box-sizing: border-box;
+			padding: 15px 35px;
+			@include placeholder {
+				color: #c0c0c0;
+				line-height: 23px;
+				font:{
+					weight: bold;
+					size: 14px;
+				}
+			}
+			&:hover{
+				outline: none;
+				border-color: #c0c0c0;
+			}
+
+		}
+		input:focus, textarea:focus{
+			outline: none;
+			border-color: #c0c0c0;
+		}
+		input:focus::-webkit-input-placeholder { color:transparent; }
+		input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+		input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+		input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+	}
+}

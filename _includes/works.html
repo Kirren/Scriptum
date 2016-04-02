@@ -1,0 +1,22 @@
+<section id="works">
+	<h3 class="long-shadow">works</h3>
+	<div class="menu">
+		<a href="#all" class="active">all</a>
+		<a href="#design">design</a>
+		<a href="#web">web</a>
+		<a href="#brand">brand</a>
+		<a href="#art">art</a>
+	</div>
+
+	<div class="work-wrap">
+		<div class="works-container">
+			{% for work in site.data.settings.works %}
+				<label for="thumb-unit-{{ work.number }}">
+					<div class="unit" id="thumb-unit-{{ work.number }}" data-folder="work-{{ work.number }}">
+						<img src="assets/img/works/work-{{ work.number }}/thumb.jpg" alt="" />
+					</div>
+				</label>
+			{% endfor %}
+		</div>
+	</div>
+</section>

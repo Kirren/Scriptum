@@ -1,0 +1,35 @@
+footer{
+	@extend %gradient-bg;
+	margin-top: 30px;
+	.wrapper{
+		height: 140px;
+		padding: 50px 6.4%;
+		box-sizing: border-box;
+		.foot-elem{width: 50%;}
+		.left{
+			float: left;
+			.socials-wrapper{
+				img{
+					@include size(15px);
+					margin-right: 17px;
+				}
+				margin-bottom: 17px;
+			}
+			.credits{
+				line-height: 23px;
+				text-transform: none;
+				color: #5c5c5c;
+				line-height: 23px;
+				letter-spacing: 1.5px;
+				font:{
+					family: arial;
+					size: 14px;
+				}
+			}
+		}
+		.right{
+			float: right;
+			.button{text-align: right;}
+		}
+	}
+}

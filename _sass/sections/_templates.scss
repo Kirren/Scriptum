@@ -1,0 +1,54 @@
+#templates{
+	background-color: transparent;
+	padding: 0 30px;
+	.temp-wrapper{
+		display: flex;
+		align-content: space-between;
+		flex-direction: column;
+		flex-wrap: wrap;
+		position: relative;
+		height: 360px;
+		padding: 210px 11.4%;
+		.phone-pic{
+			height: 80%;
+			width: 20%;
+			display: block;
+			position: absolute;
+			top: 15%;
+			left: 40%;
+		}
+
+		.characteristics{
+			.left-elem{
+				display: flex;
+				flex-direction: row;
+			}
+			.right-elem{
+				display: flex;
+				flex-direction: row-reverse;
+				text-align: right;
+			}
+			width: 400px;
+			height: 50%;
+			.icon{
+				height: 70px;
+				width: 70px;
+			}
+			.text{
+				margin: 0 20px;
+				.h6{
+					font-size: 14px;
+					letter-spacing: 1.2px;
+				}
+				.description{
+					line-height: 23px;
+					color: #6c6c6c;
+					font:{
+						family: arial;
+						size: 15px;
+					}
+				}
+			}
+		}
+	}
+}

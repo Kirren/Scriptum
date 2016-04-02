@@ -1,0 +1,14 @@
+<section id="contact">
+	<h3 class="long-shadow">Contact</h3>
+	<form method="POST" action="mailto:{{ site.data.settings.email }}">
+		<fieldset class="contact-info-group">
+			<input type="text" name="name" placeholder="&middot; NAME" onfocus="this.placeholder = ''" onblur="this.placeholder = '&middot; NAME'">
+			<input type="text" name="surname" placeholder="&middot; SURNAME" onfocus="this.placeholder = ''" onblur="this.placeholder = '&middot; SURNAME'">
+		</fieldset>
+		<fieldset>
+			<input type="email" name="_replyto" placeholder="&middot; EMAIL" onfocus="this.placeholder = ''" onblur="this.placeholder = '&middot; EMAIL'">
+		</fieldset>
+		<textarea name="message" placeholder="MESSAGE" onfocus="this.placeholder = ''" onblur="this.placeholder = 'MESSAGE'"></textarea>
+		<input type="submit" value="SEND" class="long-shadow">
+	</form>
+</section>

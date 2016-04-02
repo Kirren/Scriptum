@@ -1,0 +1,21 @@
+<section id="news">
+	<div class="wrapper">
+		<h2 class="long-shadow">news</h2>
+		<div class="articles-wrapper">
+			{% for article in site.data.settings.news %}
+				<div class="article">
+					<img src="assets/img/{{article.image}}" alt="news" class="pic">
+					<p class="meta">
+						<img src="assets/img/icons/pencil.svg" alt="" class="icon author-icon">
+						<span class="author">{{ article.author }}</span>
+						<img src="assets/img/icons/calendar.svg" alt="" class="icon date-icon">
+						<span class="date">{{ article.date }}</span>
+					</p>
+					<h6 class="title">{{ article.title }}</h6>
+					<p class="text">{{ article.text }}</p>
+					<a href="{{ article.link }}" class="long-shadow">learn more</a>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>

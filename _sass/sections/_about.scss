@@ -1,0 +1,40 @@
+#about{
+	.wrapper{
+		height: 725px;
+		@media screen and (max-width: $on-desktop) { 
+			height: 920px;
+			.pic{width: 75%;}
+		}
+		width: inherit;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+
+		.about-elem{height: 460px;}
+		.pic{
+			background: url(../img/about-bg.jpg) no-repeat center;
+			background-size: contain;
+			width: 678px;
+		}
+		.review{
+			width: 545px;
+			padding-left: 45px;
+
+			display: flex;
+			flex-wrap: wrap;
+			align-content: center;
+			.about-p{
+				font-size: 15px;
+				font-family: arial;
+			}
+			a{
+				margin-top: 30px;
+				font-size: 13px;
+				text-decoration: none;
+				&:hover{text-decoration: underline;}
+			}
+		}
+	}
+}

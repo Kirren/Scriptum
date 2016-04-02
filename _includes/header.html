@@ -1,0 +1,13 @@
+<header id="header">
+	<div class="wrapper">
+		<div class="logo head-elem"></div>
+		<nav class="menu head-elem">
+			<div class="dropdown">
+				{% for section in site.data.settings.menu %}
+					<a href="{{ section.link }}">{{ section.name }}</a>
+				{% endfor %}	
+			</div>
+		</nav>
+		<!-- <h1><span> {{ site.title }} </span></h1> -->
+	</div>
+</header>

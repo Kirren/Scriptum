@@ -1,0 +1,29 @@
+<section id="templates">
+	<div class="temp-wrapper">
+		<img src="assets/img/iphone.png" alt="phone-preview" class="phone-pic">
+		{% for template in site.data.settings.templates %}
+		{% assign loopindex = forloop.index %}
+			{% if loopindex <= 2 %}
+				<div class="characteristics">
+					<div class="char-wrapper left-elem">
+						<img src="assets/img/{{ template.icon }}" class="icon">
+						<div class="text">
+							<h6>{{ template.title }}</h6>
+							<p class="description">{{ template.text }}</p>
+						</div>	
+					</div>
+				</div>
+			{% else %}
+				<div class="characteristics">
+					<div class="char-wrapper right-elem">
+						<img src="assets/img/{{ template.icon }}" class="icon">
+						<div class="text">
+							<h6>{{ template.title }}</h6>
+							<p class="description">{{ template.text }}</p>
+						</div>	
+					</div>
+				</div>
+			{% endif %}
+		{% endfor %}	
+	</div>
+</section>

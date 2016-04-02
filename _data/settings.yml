@@ -1,0 +1,96 @@
+#-------------------------------
+# General Site Settings
+
+title: Scriptum
+email: account@domain.com
+
+menu:
+- {name: About Me, link: '#about'}
+- {name: Work, link: '#works'}
+- {name: Development, link: '#web-dev'}
+- {name: Skills, link: '#skills'}
+- {name: Template, link: '#template'}
+- {name: News, link: '#news'}
+- {name: Quotes, link: '#quotes'}
+- {name: Contact, link: '#contact'}
+
+
+#-------------------------------
+# Work Section
+
+works:
+- {name: something, number: '1', file: 'works/work-1.html'}
+- {name: something, number: '2', file: 'works/work-2.html'}
+- {name: something, number: '3', file: 'works/work-3.html'}
+- {name: something, number: '4', file: 'works/work-4.html'}
+- {name: something, number: '5', file: 'works/work-5.html'}
+- {name: something, number: '6', file: 'works/work-6.html'}
+- {name: something, number: '7', file: 'works/work-7.html'}
+- {name: something, number: '8', file: 'works/work-8.html'}
+
+
+#-------------------------------
+# Web-dev Section
+
+links:
+- {name: design, url: '#', icon: 'icons/design.svg'}
+- {name: night work, url: '#', icon: 'icons/lamp.svg'}
+- {name: communication, url: '#', icon: 'icons/sent.svg'}
+- {name: safety, url: '#', icon: 'icons/key.svg'}
+- {name: coordination, url: '#', icon: 'icons/compas.svg'}
+- {name: development, url: '#', icon: 'icons/gear.svg'}
+
+
+#-------------------------------
+# Skills Section
+
+skills:
+- {name: Design, value: '95'}
+- {name: CSS3, value: '85'}
+- {name: JavaScript, value: '80'}
+
+
+#-------------------------------
+# Template Section
+
+templates:
+- { title: 'beautiful photos',
+	text: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less.',
+	icon: 'icons/mount.svg'}
+- { title: 'full responsive',
+	text: 'Integer quis tortor metus. Aliquam et lacus nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras ut eros nibh.',
+	icon: 'icons/phone.svg'}
+- { title: 'retina ready',
+	text: 'Proin vitae quam mollis diam faucibus porta hendrerit vitae diam. Aenean cursus massa quis sem dictum convallis. Morbi ornare rutrum tellus, eu dapibus magna iaculis dictum. Nam nibh arcu.',
+	icon: 'icons/eye.svg'}
+- { title: 'crafted on coffeescript',
+	text: 'Sed a ipsum molestie, pellentesque felis at, vestibulum nunc. Aenean eu tristique elit. Vivamus ullamcorper id ante nec condimentum. In eleifend convallis ante in semper. Nam vitae com.',
+	icon: 'icons/coffee.svg'}
+
+
+#-------------------------------
+# News Section
+
+news:
+- {author: 'Stone Clad', date: '27.01.2017', title: 'Maecenas consequat turpis at ante', text: 'It is a long established fact that a reader will be distracted.', link: "#", image: 'news-1.jpg'}
+- {author: 'Stone Clad', date: '27.01.2017', title: 'Maecenas consequat turpis at ante', text: 'It is a long established fact that a reader will be distracted.', link: "#", image: 'news-2.jpg'}
+- {author: 'Stone Clad', date: '27.01.2017', title: 'Maecenas consequat turpis at ante', text: 'It is a long established fact that a reader will be distracted.', link: "#", image: 'news-3.jpg'}
+
+
+#-------------------------------
+# Quotes Section
+
+quotes:
+- { text: 'Wroin dapibus nunc eget porta, vulputate consectetur. Donec non eleifend sem. Integer eleifend tellus. Fusce quis ullamcorper,	pretium nibh undo leo vel.'}
+- { text: 'Lorem ipsum Pariatur proident magna laboris dolore nisi pariatur ut magna irure nulla ex fugiat laborum labore anim deserunt.'}
+- { text: 'Lorem ipsum Id aliquip commodo ex nostrud dolor laboris do Ut aliqua esse incididunt incididunt dolor nisi voluptate elit.'}
+- { text: 'Lorem ipsum Quis ullamco sit dolore sint culpa elit magna in cupidatat ut ea anim pariatur irure incididunt dolore mollit occaecat incididunt.'}
+
+
+#-------------------------------
+# Socials Section
+
+socials:
+- {name: twitter, icon: tw-ico.svg, link: '#'}
+- {name: facebook, icon: fb-ico.svg, link: '#'}
+- {name: behance, icon: be-ico.svg, link: '#'}
