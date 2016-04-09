@@ -2,7 +2,7 @@
 	<div class="wrapper">
 		<div class="quot-elem left">
 			<div id="slider">
-				<span class="q-marks"></span>
+				<div class="q-marks"><img src="assets/img/icons/quot-marks.png"></div>
 		        <div class="slider-inner">
 					{% for quote in site.data.settings.quotes %}
 						<div class="slider-contents">
@@ -11,10 +11,10 @@
 					{% endfor %}
 				</div>
 				<div class="navigation-bar">
-					<input type="radio", name="slider", title="slide1" class="slider-nav" checked="checked">
-					<input type="radio", name="slider", title="slide2" class="slider-nav">
-					<input type="radio", name="slider", title="slide3" class="slider-nav">
-					<input type="radio", name="slider", title="slide4" class="slider-nav">
+					<input type="radio" name="slider" title="slide1" class="slider-nav" checked="checked">
+					<input type="radio" name="slider" title="slide2" class="slider-nav">
+					<input type="radio" name="slider" title="slide3" class="slider-nav">
+					<input type="radio" name="slider" title="slide4" class="slider-nav">
 				</div>
 			</div>
 		</div>

@@ -38,4 +38,51 @@
 			}
 		}
 	}
+	/* Smartphones (portrait and landscape) ----------- */
+	@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+		.wrapper{
+			padding: 1%;
+			.articles-wrapper{
+				padding: 1vw 3vw;
+				display: block;
+				width: 100vw;
+				box-sizing: border-box;
+				.article{
+					width: 94vw;
+					display: block;
+					margin: 0 0 15px;
+					padding-bottom: 25px;
+					box-shadow: 0px 1px grey;
+					.meta{
+						text-align: center;
+						span{font-family: arial;}
+					}
+					.text{
+						letter-spacing: initial;
+						text-align: justify;
+					}
+					.meta, .text{margin-bottom: 10px;}
+				}
+			}
+		}
+	}
+	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+		.wrapper{
+			padding: 4vh 2vw;
+			.articles-wrapper{
+				padding: 0;
+				.article{
+					width: 28vw;
+					.meta{
+						span{margin-right: 2vw;}
+					}
+					.text{
+						letter-spacing: initial;
+						text-align: justify;
+					}
+					// .meta, .text{margin-bottom: 10px;}
+				}
+			}
+		}
+	}
 }

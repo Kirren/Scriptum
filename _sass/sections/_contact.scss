@@ -63,4 +63,45 @@
 		input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
 		input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 	}
+
+	/* Smartphones (portrait and landscape) ----------- */
+	@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+		height: auto;
+		h3{padding-top: 2vh;}
+		form{
+			padding: 1vh 2vw;
+			fieldset, textarea{
+				-webkit-margin-start: 0;
+				width: 96vw;
+				height: 4vh;
+				margin-bottom: 1vh;
+				input{
+					height: inherit;
+					padding: 0 3vw;
+				}	
+			}
+			textarea, fieldset>[type="text"],[type="email"]{
+				padding: 1vh 2vw;
+				@include placeholder {
+					line-height: 100%;
+					font:{
+						family: arial;
+						size: 10px;
+					}
+				}
+			}
+			textarea{height: 10vh;}
+			[type="submit"]{
+				padding: 0;
+				height: 40px;
+				width: 80px;
+			}
+		}
+	}
+	/* iPads (portrait and landscape) ----------- */
+	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+		height: auto;
+		h3{padding-top: 5vh;}
+		form{padding: 5vh;}
+	}
 }

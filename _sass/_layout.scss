@@ -1,22 +1,22 @@
-// Container settings
-.wrapper{width: inherit;}
-section{
-	margin-top: 35px;
-	width: inherit;
-	@extend %gradient-bg;
+%display-flex-box {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+%justification{
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+%row-nowrap{
+	-webkit-flex-flow: row nowrap;
+	-ms-flex-flow: row nowrap;
+	flex-flow: row nowrap;
 }
 
 // Text settings
-h2, h3{
-	text:{
-		transform: lowercase;
-		align: center;
-	}
-}
-h2{font-size: 45px;}
-
-h3{font-size: 38px;}
-
 .long-shadow{
 	text-shadow:#f0f0f0 1px 1px,
 				#f0f0f0 2px 2px,
@@ -35,4 +35,3 @@ h3{font-size: 38px;}
 				#f0f0f0 15px 15px;
 }
 
-a, h2, h3, h6, .skill-label, p.text{color: $accent-dark-blue;}

@@ -1,6 +1,5 @@
 #works {
 	height: 1333px;
-	padding: 140px 16% 0px;
 
 	h3, .menu{text-align: center;}
 	.menu{
@@ -32,40 +31,63 @@
 		label{
 			padding-bottom: 30px;
 			.unit{
+				position: relative;
+				top: 0%;
+				height: 200%;
+				overflow: hidden;
+				.overlay{
+					position: absolute;
+					width: inherit;
+					top: 100%;
+					opacity: 0.5;
+					-webkit-transition: -webkit-transform 1s; /* Safari */
+					transition: transform 1s;
+				}
 				&:hover{
 					-ms-transform: scale(1.1); /* IE 9 */
 					-webkit-transform: scale(1.1); /* Safari */
 					transform: scale(1.1);
+					.overlay{
+						-ms-transform: translate(0px,-100%); /* IE 9 */
+						-webkit-transform: translate(0px,-100%); /* Safari */
+						transform: translate(0px,-100%);
+					}
 				}
+				
 			}
 		}
 	}
 
-	@media screen and (max-width: $on-desktop) {
-		padding-left: 10%;
-		padding-right: 10%;
-	}
-	@media screen and (max-width: 1560px) {
-		padding-left: 7%;
-		padding-right: 7%;
-	}
-	@media screen and (max-width: 1440px) {	
-		height: 1650px;	
-		padding: 2%;
-		.work-wrap{height: inherit;}
-		.works-container{
-			width: inherit;
-			height: 1450px;
-			justify-content: space-between;
-			
-
-			// @for $i from 1 through 8 {
-			// 	@if #thumb-unit-#{$i}:hover == true {
-			// 		#thumb-overlay-#{$i}{
-			// 			display: block;
-			// 		}
-			// 	}
-			// }
+	/* Smartphones (portrait and landscape) ----------- */
+	@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+		height: auto;
+		padding: 0;
+		.menu{
+			margin: 0;
+			a{margin: 0.2rem;}
 		}
+		.works-container{
+			width: 100%;
+			height: auto;
+			box-sizing: border-box;
+			padding: 1%;
+		}
+	}
+	/* iPads (portrait and landscape) ----------- */
+	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+		height: auto;
+		padding: 0;
+		.works-container{
+			width: 100%;
+			height: 75vh;
+			box-sizing: border-box;
+			padding: 1%;
+			label{width: 25vw;}
+		}
+	}
+	/* Desktops and laptops ----------- */
+	@media only screen and (min-device-width : 1224px) {
+		h3{padding-top: 5vh;}
+		.works-container{height: 960px;}
 	}
 }

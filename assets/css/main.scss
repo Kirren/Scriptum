@@ -37,15 +37,6 @@ $accent-grey-light:lighten($accent-grey, 40%);
 $accent-grey-dark: #6c6c6c;
 $accent-dark-blue: #1a2631;
 
-// Width of the content area
-$content-width:    1920px;
-
-$on-palm:          800px;
-$on-laptop:        1310px;
-$on-desktop:       1850px;
-
-
-
 // Use media queries like this:
 // @include media-query($on-palm) {
 //     .wrapper {
@@ -59,6 +50,7 @@ $on-desktop:       1850px;
 	}
 }
 
+// Cross-browser placeholder filler
 @mixin optional-at-root($sel) {
 	@at-root #{if(not &, $sel, selector-append(&, $sel))} {@content;}
 }

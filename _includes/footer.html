@@ -1,6 +1,6 @@
 <footer class="site-footer">
 	<div class="wrapper">
-		<div class="left foot-elem">
+		<div class="foot-elem left">
 			<div class="socials-wrapper">
 				{% for unit in site.data.settings.socials %}
 					<a href="{{ unit.link }}" id="{{ unit.name }}"><img src="assets/img/icons/{{ unit.icon }}" alt="Go to {{ unit.name | capitalize }}"></a>
@@ -8,7 +8,7 @@
 			</div>
 			<p class="credits">Designed by Andrejs Hairulins - 2016©</p>
 		</div>
-		<div class="right foot-elem">
+		<div class="foot-elem right">
 			<div class="button">
 				<a href="#header">
 					<img src="assets/img/icons/up-button.png" alt="Up">

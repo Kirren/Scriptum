@@ -21,10 +21,42 @@
 						&.skill-#{$i} span:nth-child(n+#{$i + 1}) {
 							@extend %skill-color;
 						}
+						&.skill-#{$i} span:nth-child(#{$i}){
+							position: relative;
+							&:after{
+								content: "#{$i}%";
+								font:{
+									family: $base-font-family;
+									size: 14px;
+								}
+								color: $background-color;
+								position: absolute;
+								right: 17px;
+								top: 6px;
+							}
+						}
 					}
 					%skill-color {background: #f3f3f3;}
 				}
 			}
-		}	
+		}
+		/* Smartphones (portrait and landscape) ----------- */
+		@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+			height: auto;
+			h2{
+				margin-top: 15px;
+				padding: 0;
+			}
+			.skill-lockup{
+				padding: 5vw;
+				.skill-unit{
+					margin-bottom: 10px;
+					.skill-label{margin-bottom: 5px;}
+					.skill-icons{
+						span{height: 20px;}
+					}
+				}
+			}
+		}
 	}
 }

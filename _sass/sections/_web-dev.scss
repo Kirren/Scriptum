@@ -2,51 +2,96 @@
 	.wrapper{
 		height: 800px;
 		padding: 0px;
-	}
-	.wd-elem{
-		width: 49%;
-		height: inherit;
-		display: flex;
-	}
-	.bg{
-		float: left;
-		background: url(../img/wd-title.png) no-repeat center,
-					url(../img/wd-bg.jpg) no-repeat center;
-		vertical-align: middle;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.links{
-		float: right;
-
-		.links-wrapper{
-			padding: 120px 14.8%;
-			width: 100%;
+	
+		.wd-elem{
+			width: 49%;
+			height: inherit;
 			display: flex;
-			flex-direction: column;
-			flex-wrap: wrap;
-			align-items: center;
 		}
-		.reference{
-			height: 180px;
-			width: 50%;
-			text-align: center;
-			display: flex;
+		.bg{
+			float: left;
+			background: url(../img/wd-title.png) no-repeat center,
+						url(../img/wd-bg.jpg) no-repeat center;
+			background-size: contain, cover;
+			vertical-align: middle;
 			flex-direction: column;
 			justify-content: center;
-			a{padding-top: 35px;}
-			&:hover{
-				background-color: #f0f0f0;
-				cursor: pointer;
+			align-items: center;
+		}
+
+		.links{
+			float: right;
+
+			.links-wrapper{
+				padding: 120px 14.8%;
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				flex-wrap: wrap;
+				align-items: center;
+			}
+			.reference{
+				height: 180px;
+				width: 50%;
+				text-align: center;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				a{padding-top: 35px;}
+				&:hover{
+					background-color: #f0f0f0;
+					cursor: pointer;
+				}
 			}
 		}
-	}
-	img{
-		display: block;
-		height: 60px;
-		width: 60px;
-		margin: 0 auto;
+		img{
+			display: block;
+			height: 60px;
+			width: 60px;
+			margin: 0 auto;
+		}
+		/* Smartphones (portrait and landscape) ----------- */
+		@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+			.wd-elem{
+				width: 100%;
+				height: auto;
+			}
+			.bg{
+				height: 370px;
+				background-size: contain;
+			}
+			.links{
+				.links-wrapper{
+					padding: 3vw;
+					flex-flow: row wrap;
+					justify-content: center;
+					height: 370px;
+					.reference{
+						width: 30%;
+						align-items: stretch;
+						a{font-size: 11px;}
+					}
+				}
+			}
+		}
+		/* iPads (portrait and landscape) ----------- */
+		@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+			.wd-elem{width: 100%;}
+			.bg{height: 35vh;}
+			.links{
+				height: initial;
+				.links-wrapper{
+					padding: 1vh 1vw;
+					flex-flow: row wrap;
+					justify-content: center;
+					height: 56vh;
+					.reference{
+						width: 30%;
+						align-items: stretch;
+						a{font-size: 11px;}
+					}
+				}
+			}
+		}
 	}
 }

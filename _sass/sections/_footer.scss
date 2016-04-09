@@ -32,4 +32,22 @@ footer{
 			.button{text-align: right;}
 		}
 	}
+	/* Smartphones (portrait and landscape) ----------- */
+	@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+		.wrapper{
+			padding: 3vh 5vw;
+			height: 11vh;
+			.foot-elem{width: auto;}
+			.left{
+				width: 75%;
+				.socials-wrapper{margin-bottom: 1vh;}
+				.credits{
+					line-height: normal;
+					letter-spacing: normal;
+					font-size: 10px;
+				}
+			}
+			.rigth{width: 25%;}
+		}
+	}
 }
