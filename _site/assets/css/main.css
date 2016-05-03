@@ -1,0 +1,2090 @@
+body section, #header .wrapper .menu .dropdown, footer {
+  background: -moz-linear-gradient(360deg, #f3f3f3 0%, #f3f3f3 1%, white 100%);
+  /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #f3f3f3), color-stop(1%, #f3f3f3), color-stop(100%, white));
+  /* safari4+,chrome */
+  background: -webkit-linear-gradient(360deg, #f3f3f3 0%, #f3f3f3 1%, white 100%);
+  /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(360deg, #f3f3f3 0%, #f3f3f3 1%, white 100%);
+  /* opera 11.10+ */
+  background: -ms-linear-gradient(360deg, #f3f3f3 0%, #f3f3f3 1%, white 100%);
+  /* ie10+ */
+  background: linear-gradient(90deg, #f3f3f3 0%, #f3f3f3 1%, white 100%);
+  /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f3f3', endColorstr='#ffffff',GradientType=1 );
+  /* ie6-9 */ }
+
+/* Reset some basic elements */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0; }
+
+/* Basic styling */
+body {
+  font: 400 16px/1.5 "Baron Neue", Helvetica, Arial, sans-serif;
+  color: #1a2631;
+  background-color: #f3f3f3;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  box-sizing: border-box;
+  max-width: 1950px;
+  min-width: 320px;
+  padding: 4vh;
+  margin: 0 auto;
+  width: 100vw;
+  /* Smartphones (portrait and landscape) ----------- */
+  /* iPads (portrait and landscape) ----------- */
+  /* Desktops and laptops ----------- */ }
+  body section {
+    margin-top: 35px;
+    width: 100%;
+    box-sizing: border-box; }
+  body .wrapper {
+    width: 100%;
+    box-sizing: border-box; }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    body {
+      margin: 0 auto;
+      padding: 0; }
+      body h2, body h3 {
+        font-size: 24px; }
+      body a {
+        font-size: 13px; }
+      body section {
+        height: auto;
+        margin: 10px 0 0; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    body {
+      padding: 2vh; }
+      body section {
+        height: auto; } }
+  @media only screen and (min-device-width: 1224px) {
+    body {
+      padding: 4vh; }
+      body section {
+        height: auto; } }
+
+a, h2, h3, h6, .skill-label, p.text {
+  color: #1a2631; }
+
+/* Set `margin-bottom` to maintain vertical rhythm */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure {
+  margin-bottom: 15px; }
+
+/* Images */
+img {
+  max-width: 100%;
+  vertical-align: middle; }
+
+/* Figures */
+figure > img {
+  display: block; }
+
+figcaption {
+  font-size: 14px; }
+
+/* Lists */
+ul, ol {
+  margin-left: 30px; }
+
+li > ul,
+li > ol {
+  margin-bottom: 0; }
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400; }
+
+h2, h3 {
+  text-transform: lowercase;
+  text-align: center; }
+
+h2 {
+  font-size: 45px; }
+
+h3 {
+  font-size: 38px; }
+
+/* Links */
+a {
+  text-decoration: none; }
+  a:visited {
+    color: black; }
+  a:hover {
+    color: #1a2631;
+    text-decoration: underline; }
+
+/* Blockquotes */
+blockquote {
+  color: #c6c6c6;
+  border-left: 4px solid white;
+  padding-left: 15px;
+  font-size: 18px;
+  letter-spacing: -1px;
+  font-style: italic; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+/* Code formatting */
+pre,
+code {
+  font-size: 15px;
+  border: 1px solid white;
+  border-radius: 3px;
+  background-color: #eef; }
+
+code {
+  padding: 1px 5px; }
+
+pre {
+  padding: 8px 12px;
+  overflow-x: auto; }
+  pre > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0; }
+
+/* Clearfix */
+/* Icons */
+.icon > svg {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle; }
+  .icon > svg path {
+    fill: #c6c6c6; }
+
+@font-face {
+  font-family: 'Baron Neue';
+  font-weight: 400;
+  src: url(fonts/baron_neue.ttf); }
+@font-face {
+  font-family: 'Baron Neue';
+  font-weight: 700;
+  src: url(fonts/baron_neue_bold.ttf); }
+@font-face {
+  font-family: 'Silent Lips';
+  font-weight: 400;
+  src: url(fonts/silent_lips.ttf); }
+@font-face {
+  font-family: 'Silent Lips';
+  font-weight: 700;
+  src: url(fonts/silent_lips_bold.ttf); }
+#quotes .wrapper .left #slider, #quotes .wrapper .left #slider .slider-inner, #quotes .wrapper .left #slider .slider-inner .slider-contents {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+#quotes .wrapper .left #slider .slider-inner .slider-contents {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+#quotes .wrapper .left #slider .slider-inner {
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap; }
+
+.long-shadow {
+  text-shadow: #f0f0f0 1px 1px, #f0f0f0 2px 2px, #f0f0f0 3px 3px, #f0f0f0 4px 4px, #f0f0f0 5px 5px, #f0f0f0 6px 6px, #f0f0f0 7px 7px, #f0f0f0 8px 8px, #f0f0f0 9px 9px, #f0f0f0 10px 10px, #f0f0f0 11px 11px, #f0f0f0 12px 12px, #f0f0f0 13px 13px, #f0f0f0 14px 14px, #f0f0f0 15px 15px; }
+
+#header .wrapper {
+  padding: 23px 25px 0;
+  height: 1010px;
+  display: block;
+  background: url(../img/title_bg.jpg) no-repeat center;
+  background-size: cover;
+  /* iPads (portrait and landscape) ----------- */ }
+  #header .wrapper .head-elem {
+    display: inline-block;
+    height: 120px;
+    width: 85px; }
+  #header .wrapper .logo {
+    float: left;
+    background: url(../img/logo.png) no-repeat center;
+    z-index: 1; }
+  #header .wrapper .menu {
+    float: right;
+    background: url(../img/menu.png) no-repeat center;
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box; }
+    #header .wrapper .menu:hover {
+      -webkit-box-shadow: inset -7px -7px 0px 0px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: inset -7px -7px 0px 0px rgba(0, 0, 0, 0.5);
+      box-shadow: inset -7px -7px 0px 0px rgba(0, 0, 0, 0.5); }
+      #header .wrapper .menu:hover .dropdown {
+        display: block; }
+    #header .wrapper .menu .dropdown {
+      display: none;
+      position: absolute;
+      left: -160px;
+      width: 160px; }
+      #header .wrapper .menu .dropdown a {
+        color: #1a2631;
+        padding: 10px;
+        text-transform: none;
+        text-decoration: none;
+        display: block;
+        text-align: left; }
+        #header .wrapper .menu .dropdown a:hover {
+          background-color: #f3f3f3; }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    #header .wrapper {
+      height: 400px;
+      padding: 0; }
+      #header .wrapper .head-elem {
+        visibility: hidden; }
+        #header .wrapper .head-elem .dropdown {
+          visibility: visible;
+          height: 4rem;
+          width: 100vw;
+          position: fixed;
+          top: 0;
+          left: 0;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: center;
+          align-content: flex-start;
+          box-shadow: 0px 1px grey; }
+          #header .wrapper .head-elem .dropdown a {
+            padding: 0.3rem;
+            font-size: 12px; }
+            #header .wrapper .head-elem .dropdown a:active {
+              background-color: #f3f3f3; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    #header .wrapper {
+      height: 100vh; } }
+
+footer {
+  margin-top: 30px;
+  /* Smartphones (portrait and landscape) ----------- */ }
+  footer .wrapper {
+    height: 140px;
+    padding: 50px 6.4%;
+    box-sizing: border-box; }
+    footer .wrapper .foot-elem {
+      width: 50%; }
+    footer .wrapper .left {
+      float: left; }
+      footer .wrapper .left .socials-wrapper {
+        margin-bottom: 17px; }
+        footer .wrapper .left .socials-wrapper img {
+          height: 15px;
+          width: 15px;
+          margin-right: 17px; }
+      footer .wrapper .left .credits {
+        line-height: 23px;
+        text-transform: none;
+        color: #5c5c5c;
+        line-height: 23px;
+        letter-spacing: 1.5px;
+        font-family: arial;
+        font-size: 14px; }
+    footer .wrapper .right {
+      float: right; }
+      footer .wrapper .right .button {
+        text-align: right; }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    footer .wrapper {
+      padding: 3vh 5vw;
+      height: 11vh; }
+      footer .wrapper .foot-elem {
+        width: auto; }
+      footer .wrapper .left {
+        width: 75%; }
+        footer .wrapper .left .socials-wrapper {
+          margin-bottom: 1vh; }
+        footer .wrapper .left .credits {
+          line-height: normal;
+          letter-spacing: normal;
+          font-size: 10px; }
+      footer .wrapper .rigth {
+        width: 25%; } }
+
+#about {
+  /* Smartphones (portrait and landscape) ----------- */
+  /* iPads (portrait and landscape) ----------- */ }
+  #about .wrapper {
+    height: 725px;
+    width: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    #about .wrapper .about-elem {
+      height: 460px; }
+    #about .wrapper .pic {
+      background: url(../img/about-bg.jpg) no-repeat center;
+      background-size: contain;
+      width: 678px; }
+    #about .wrapper .review {
+      width: 545px;
+      padding-left: 45px;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center; }
+      #about .wrapper .review .about-p {
+        font-size: 15px;
+        font-family: arial; }
+      #about .wrapper .review a {
+        margin-top: 30px;
+        font-size: 13px;
+        text-decoration: none; }
+        #about .wrapper .review a:hover {
+          text-decoration: underline; }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    #about .wrapper {
+      height: auto; }
+      #about .wrapper .about-elem {
+        width: 100%; }
+      #about .wrapper .pic {
+        display: none; }
+      #about .wrapper .review {
+        padding: 0 1rem;
+        text-align: justify; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    #about .wrapper {
+      height: auto !important; }
+      #about .wrapper .review {
+        width: 75%;
+        text-align: justify;
+        padding-left: 0; } }
+  @media only screen and (min-device-width: 1024px) {
+    #about .wrapper {
+      height: auto; } }
+
+#works {
+  height: 1333px;
+  /* Smartphones (portrait and landscape) ----------- */
+  /* iPads (portrait and landscape) ----------- */
+  /* Desktops and laptops ----------- */ }
+  #works h3, #works .menu {
+    text-align: center; }
+  #works .menu {
+    margin-top: 60px; }
+    #works .menu a {
+      margin: 0 15px; }
+      #works .menu a.active {
+        text-decoration: underline;
+        text-transform: uppercase; }
+      #works .menu a:hover {
+        text-decoration: underline;
+        text-transform: uppercase; }
+        #works .menu a:hover ~ {
+          text-decoration: none; }
+  #works .works-container {
+    margin: 60px auto 0;
+    height: 1050px;
+    width: 1253px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center; }
+    #works .works-container label {
+      padding-bottom: 30px; }
+      #works .works-container label .unit {
+        position: relative;
+        top: 0%;
+        height: 200%;
+        overflow: hidden; }
+        #works .works-container label .unit .overlay {
+          position: absolute;
+          width: inherit;
+          top: 100%;
+          opacity: 0.5;
+          -webkit-transition: -webkit-transform 1s;
+          /* Safari */
+          transition: transform 1s; }
+        #works .works-container label .unit:hover {
+          -ms-transform: scale(1.1);
+          /* IE 9 */
+          -webkit-transform: scale(1.1);
+          /* Safari */
+          transform: scale(1.1); }
+          #works .works-container label .unit:hover .overlay {
+            -ms-transform: translate(0px, -100%);
+            /* IE 9 */
+            -webkit-transform: translate(0px, -100%);
+            /* Safari */
+            transform: translate(0px, -100%); }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    #works {
+      height: auto;
+      padding: 0; }
+      #works .menu {
+        margin: 0; }
+        #works .menu a {
+          margin: 0.2rem; }
+      #works .works-container {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        padding: 1%; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    #works {
+      height: auto;
+      padding: 0; }
+      #works .works-container {
+        width: 100%;
+        height: 75vh;
+        box-sizing: border-box;
+        padding: 1%; }
+        #works .works-container label {
+          width: 25vw; } }
+  @media only screen and (min-device-width: 1224px) {
+    #works h3 {
+      padding-top: 5vh; }
+    #works .works-container {
+      height: 960px; } }
+
+#web-dev .wrapper {
+  height: 800px;
+  padding: 0px;
+  /* Smartphones (portrait and landscape) ----------- */
+  /* iPads (portrait and landscape) ----------- */ }
+  #web-dev .wrapper .wd-elem {
+    width: 49%;
+    height: inherit;
+    display: flex; }
+  #web-dev .wrapper .bg {
+    float: left;
+    background: url(../img/wd-title.png) no-repeat center, url(../img/wd-bg.jpg) no-repeat center;
+    background-size: contain, cover;
+    vertical-align: middle;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  #web-dev .wrapper .links {
+    float: right; }
+    #web-dev .wrapper .links .links-wrapper {
+      padding: 120px 14.8%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center; }
+    #web-dev .wrapper .links .reference {
+      height: 180px;
+      width: 50%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      #web-dev .wrapper .links .reference a {
+        padding-top: 35px; }
+      #web-dev .wrapper .links .reference:hover {
+        background-color: #f0f0f0;
+        cursor: pointer; }
+  #web-dev .wrapper img {
+    display: block;
+    height: 60px;
+    width: 60px;
+    margin: 0 auto; }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    #web-dev .wrapper .wd-elem {
+      width: 100%;
+      height: auto; }
+    #web-dev .wrapper .bg {
+      height: 370px;
+      background-size: contain; }
+    #web-dev .wrapper .links .links-wrapper {
+      padding: 3vw;
+      flex-flow: row wrap;
+      justify-content: center;
+      height: 370px; }
+      #web-dev .wrapper .links .links-wrapper .reference {
+        width: 30%;
+        align-items: stretch; }
+        #web-dev .wrapper .links .links-wrapper .reference a {
+          font-size: 11px; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    #web-dev .wrapper .wd-elem {
+      width: 100%; }
+    #web-dev .wrapper .bg {
+      height: 35vh; }
+    #web-dev .wrapper .links {
+      height: initial; }
+      #web-dev .wrapper .links .links-wrapper {
+        padding: 1vh 1vw;
+        flex-flow: row wrap;
+        justify-content: center;
+        height: 56vh; }
+        #web-dev .wrapper .links .links-wrapper .reference {
+          width: 30%;
+          align-items: stretch; }
+          #web-dev .wrapper .links .links-wrapper .reference a {
+            font-size: 11px; } }
+
+#skills .wrapper {
+  height: 720px;
+  /* Smartphones (portrait and landscape) ----------- */ }
+  #skills .wrapper::after {
+    clear: both;
+    content: "";
+    display: block; }
+  #skills .wrapper h2 {
+    padding-top: 75px; }
+  #skills .wrapper .skill-lockup {
+    padding: 80px 6.4% 0; }
+    #skills .wrapper .skill-lockup .skill-unit {
+      width: inherit;
+      margin-bottom: 50px; }
+      #skills .wrapper .skill-lockup .skill-unit .skill-label {
+        margin-bottom: 33px; }
+      #skills .wrapper .skill-lockup .skill-unit .skill-icons {
+        font-size: 0; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons span {
+          display: inline-block;
+          width: 1%;
+          height: 35px;
+          background-color: black; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-1 span:nth-child(1) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-1 span:nth-child(1):after {
+            content: "1%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-2 span:nth-child(2) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-2 span:nth-child(2):after {
+            content: "2%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-3 span:nth-child(3) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-3 span:nth-child(3):after {
+            content: "3%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-4 span:nth-child(4) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-4 span:nth-child(4):after {
+            content: "4%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-5 span:nth-child(5) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-5 span:nth-child(5):after {
+            content: "5%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-6 span:nth-child(6) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-6 span:nth-child(6):after {
+            content: "6%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-7 span:nth-child(7) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-7 span:nth-child(7):after {
+            content: "7%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-8 span:nth-child(8) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-8 span:nth-child(8):after {
+            content: "8%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-9 span:nth-child(9) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-9 span:nth-child(9):after {
+            content: "9%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-10 span:nth-child(10) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-10 span:nth-child(10):after {
+            content: "10%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-11 span:nth-child(11) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-11 span:nth-child(11):after {
+            content: "11%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-12 span:nth-child(12) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-12 span:nth-child(12):after {
+            content: "12%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-13 span:nth-child(13) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-13 span:nth-child(13):after {
+            content: "13%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-14 span:nth-child(14) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-14 span:nth-child(14):after {
+            content: "14%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-15 span:nth-child(15) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-15 span:nth-child(15):after {
+            content: "15%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-16 span:nth-child(16) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-16 span:nth-child(16):after {
+            content: "16%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-17 span:nth-child(17) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-17 span:nth-child(17):after {
+            content: "17%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-18 span:nth-child(18) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-18 span:nth-child(18):after {
+            content: "18%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-19 span:nth-child(19) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-19 span:nth-child(19):after {
+            content: "19%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-20 span:nth-child(20) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-20 span:nth-child(20):after {
+            content: "20%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-21 span:nth-child(21) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-21 span:nth-child(21):after {
+            content: "21%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-22 span:nth-child(22) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-22 span:nth-child(22):after {
+            content: "22%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-23 span:nth-child(23) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-23 span:nth-child(23):after {
+            content: "23%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-24 span:nth-child(24) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-24 span:nth-child(24):after {
+            content: "24%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-25 span:nth-child(25) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-25 span:nth-child(25):after {
+            content: "25%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-26 span:nth-child(26) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-26 span:nth-child(26):after {
+            content: "26%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-27 span:nth-child(27) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-27 span:nth-child(27):after {
+            content: "27%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-28 span:nth-child(28) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-28 span:nth-child(28):after {
+            content: "28%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-29 span:nth-child(29) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-29 span:nth-child(29):after {
+            content: "29%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-30 span:nth-child(30) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-30 span:nth-child(30):after {
+            content: "30%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-31 span:nth-child(31) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-31 span:nth-child(31):after {
+            content: "31%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-32 span:nth-child(32) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-32 span:nth-child(32):after {
+            content: "32%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-33 span:nth-child(33) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-33 span:nth-child(33):after {
+            content: "33%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-34 span:nth-child(34) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-34 span:nth-child(34):after {
+            content: "34%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-35 span:nth-child(35) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-35 span:nth-child(35):after {
+            content: "35%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-36 span:nth-child(36) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-36 span:nth-child(36):after {
+            content: "36%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-37 span:nth-child(37) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-37 span:nth-child(37):after {
+            content: "37%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-38 span:nth-child(38) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-38 span:nth-child(38):after {
+            content: "38%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-39 span:nth-child(39) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-39 span:nth-child(39):after {
+            content: "39%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-40 span:nth-child(40) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-40 span:nth-child(40):after {
+            content: "40%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-41 span:nth-child(41) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-41 span:nth-child(41):after {
+            content: "41%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-42 span:nth-child(42) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-42 span:nth-child(42):after {
+            content: "42%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-43 span:nth-child(43) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-43 span:nth-child(43):after {
+            content: "43%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-44 span:nth-child(44) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-44 span:nth-child(44):after {
+            content: "44%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-45 span:nth-child(45) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-45 span:nth-child(45):after {
+            content: "45%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-46 span:nth-child(46) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-46 span:nth-child(46):after {
+            content: "46%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-47 span:nth-child(47) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-47 span:nth-child(47):after {
+            content: "47%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-48 span:nth-child(48) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-48 span:nth-child(48):after {
+            content: "48%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-49 span:nth-child(49) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-49 span:nth-child(49):after {
+            content: "49%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-50 span:nth-child(50) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-50 span:nth-child(50):after {
+            content: "50%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-51 span:nth-child(51) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-51 span:nth-child(51):after {
+            content: "51%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-52 span:nth-child(52) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-52 span:nth-child(52):after {
+            content: "52%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-53 span:nth-child(53) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-53 span:nth-child(53):after {
+            content: "53%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-54 span:nth-child(54) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-54 span:nth-child(54):after {
+            content: "54%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-55 span:nth-child(55) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-55 span:nth-child(55):after {
+            content: "55%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-56 span:nth-child(56) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-56 span:nth-child(56):after {
+            content: "56%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-57 span:nth-child(57) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-57 span:nth-child(57):after {
+            content: "57%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-58 span:nth-child(58) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-58 span:nth-child(58):after {
+            content: "58%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-59 span:nth-child(59) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-59 span:nth-child(59):after {
+            content: "59%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-60 span:nth-child(60) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-60 span:nth-child(60):after {
+            content: "60%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-61 span:nth-child(61) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-61 span:nth-child(61):after {
+            content: "61%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-62 span:nth-child(62) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-62 span:nth-child(62):after {
+            content: "62%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-63 span:nth-child(63) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-63 span:nth-child(63):after {
+            content: "63%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-64 span:nth-child(64) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-64 span:nth-child(64):after {
+            content: "64%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-65 span:nth-child(65) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-65 span:nth-child(65):after {
+            content: "65%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-66 span:nth-child(66) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-66 span:nth-child(66):after {
+            content: "66%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-67 span:nth-child(67) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-67 span:nth-child(67):after {
+            content: "67%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-68 span:nth-child(68) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-68 span:nth-child(68):after {
+            content: "68%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-69 span:nth-child(69) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-69 span:nth-child(69):after {
+            content: "69%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-70 span:nth-child(70) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-70 span:nth-child(70):after {
+            content: "70%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-71 span:nth-child(71) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-71 span:nth-child(71):after {
+            content: "71%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-72 span:nth-child(72) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-72 span:nth-child(72):after {
+            content: "72%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-73 span:nth-child(73) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-73 span:nth-child(73):after {
+            content: "73%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-74 span:nth-child(74) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-74 span:nth-child(74):after {
+            content: "74%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-75 span:nth-child(75) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-75 span:nth-child(75):after {
+            content: "75%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-76 span:nth-child(76) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-76 span:nth-child(76):after {
+            content: "76%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-77 span:nth-child(77) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-77 span:nth-child(77):after {
+            content: "77%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-78 span:nth-child(78) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-78 span:nth-child(78):after {
+            content: "78%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-79 span:nth-child(79) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-79 span:nth-child(79):after {
+            content: "79%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-80 span:nth-child(80) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-80 span:nth-child(80):after {
+            content: "80%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-81 span:nth-child(81) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-81 span:nth-child(81):after {
+            content: "81%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-82 span:nth-child(82) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-82 span:nth-child(82):after {
+            content: "82%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-83 span:nth-child(83) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-83 span:nth-child(83):after {
+            content: "83%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-84 span:nth-child(84) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-84 span:nth-child(84):after {
+            content: "84%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-85 span:nth-child(85) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-85 span:nth-child(85):after {
+            content: "85%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-86 span:nth-child(86) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-86 span:nth-child(86):after {
+            content: "86%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-87 span:nth-child(87) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-87 span:nth-child(87):after {
+            content: "87%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-88 span:nth-child(88) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-88 span:nth-child(88):after {
+            content: "88%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-89 span:nth-child(89) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-89 span:nth-child(89):after {
+            content: "89%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-90 span:nth-child(90) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-90 span:nth-child(90):after {
+            content: "90%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-91 span:nth-child(91) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-91 span:nth-child(91):after {
+            content: "91%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-92 span:nth-child(92) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-92 span:nth-child(92):after {
+            content: "92%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-93 span:nth-child(93) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-93 span:nth-child(93):after {
+            content: "93%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-94 span:nth-child(94) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-94 span:nth-child(94):after {
+            content: "94%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-95 span:nth-child(95) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-95 span:nth-child(95):after {
+            content: "95%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-96 span:nth-child(96) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-96 span:nth-child(96):after {
+            content: "96%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-97 span:nth-child(97) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-97 span:nth-child(97):after {
+            content: "97%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-98 span:nth-child(98) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-98 span:nth-child(98):after {
+            content: "98%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-99 span:nth-child(99) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-99 span:nth-child(99):after {
+            content: "99%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-100 span:nth-child(100) {
+          position: relative; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-100 span:nth-child(100):after {
+            content: "100%";
+            font-family: "Baron Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #f3f3f3;
+            position: absolute;
+            right: 17px;
+            top: 6px; }
+        #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-1 span:nth-child(n+2), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-2 span:nth-child(n+3), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-3 span:nth-child(n+4), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-4 span:nth-child(n+5), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-5 span:nth-child(n+6), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-6 span:nth-child(n+7), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-7 span:nth-child(n+8), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-8 span:nth-child(n+9), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-9 span:nth-child(n+10), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-10 span:nth-child(n+11), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-11 span:nth-child(n+12), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-12 span:nth-child(n+13), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-13 span:nth-child(n+14), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-14 span:nth-child(n+15), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-15 span:nth-child(n+16), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-16 span:nth-child(n+17), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-17 span:nth-child(n+18), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-18 span:nth-child(n+19), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-19 span:nth-child(n+20), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-20 span:nth-child(n+21), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-21 span:nth-child(n+22), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-22 span:nth-child(n+23), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-23 span:nth-child(n+24), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-24 span:nth-child(n+25), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-25 span:nth-child(n+26), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-26 span:nth-child(n+27), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-27 span:nth-child(n+28), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-28 span:nth-child(n+29), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-29 span:nth-child(n+30), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-30 span:nth-child(n+31), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-31 span:nth-child(n+32), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-32 span:nth-child(n+33), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-33 span:nth-child(n+34), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-34 span:nth-child(n+35), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-35 span:nth-child(n+36), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-36 span:nth-child(n+37), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-37 span:nth-child(n+38), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-38 span:nth-child(n+39), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-39 span:nth-child(n+40), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-40 span:nth-child(n+41), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-41 span:nth-child(n+42), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-42 span:nth-child(n+43), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-43 span:nth-child(n+44), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-44 span:nth-child(n+45), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-45 span:nth-child(n+46), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-46 span:nth-child(n+47), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-47 span:nth-child(n+48), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-48 span:nth-child(n+49), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-49 span:nth-child(n+50), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-50 span:nth-child(n+51), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-51 span:nth-child(n+52), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-52 span:nth-child(n+53), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-53 span:nth-child(n+54), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-54 span:nth-child(n+55), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-55 span:nth-child(n+56), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-56 span:nth-child(n+57), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-57 span:nth-child(n+58), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-58 span:nth-child(n+59), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-59 span:nth-child(n+60), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-60 span:nth-child(n+61), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-61 span:nth-child(n+62), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-62 span:nth-child(n+63), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-63 span:nth-child(n+64), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-64 span:nth-child(n+65), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-65 span:nth-child(n+66), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-66 span:nth-child(n+67), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-67 span:nth-child(n+68), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-68 span:nth-child(n+69), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-69 span:nth-child(n+70), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-70 span:nth-child(n+71), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-71 span:nth-child(n+72), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-72 span:nth-child(n+73), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-73 span:nth-child(n+74), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-74 span:nth-child(n+75), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-75 span:nth-child(n+76), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-76 span:nth-child(n+77), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-77 span:nth-child(n+78), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-78 span:nth-child(n+79), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-79 span:nth-child(n+80), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-80 span:nth-child(n+81), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-81 span:nth-child(n+82), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-82 span:nth-child(n+83), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-83 span:nth-child(n+84), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-84 span:nth-child(n+85), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-85 span:nth-child(n+86), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-86 span:nth-child(n+87), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-87 span:nth-child(n+88), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-88 span:nth-child(n+89), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-89 span:nth-child(n+90), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-90 span:nth-child(n+91), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-91 span:nth-child(n+92), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-92 span:nth-child(n+93), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-93 span:nth-child(n+94), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-94 span:nth-child(n+95), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-95 span:nth-child(n+96), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-96 span:nth-child(n+97), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-97 span:nth-child(n+98), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-98 span:nth-child(n+99), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-99 span:nth-child(n+100), #skills .wrapper .skill-lockup .skill-unit .skill-icons.skill-100 span:nth-child(n+101) {
+          background: #f3f3f3; }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    #skills .wrapper {
+      height: auto; }
+      #skills .wrapper h2 {
+        margin-top: 15px;
+        padding: 0; }
+      #skills .wrapper .skill-lockup {
+        padding: 5vw; }
+        #skills .wrapper .skill-lockup .skill-unit {
+          margin-bottom: 10px; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-label {
+            margin-bottom: 5px; }
+          #skills .wrapper .skill-lockup .skill-unit .skill-icons span {
+            height: 20px; } }
+
+#templates {
+  background-color: transparent;
+  padding: 0 30px;
+  /* Smartphones (portrait and landscape) ----------- */
+  /* iPads (portrait and landscape) ----------- */
+  /* Desktops and laptops ----------- */
+  /* Desktops and laptops ----------- */
+  /* Large screens ----------- */ }
+  #templates .temp-wrapper {
+    display: flex;
+    align-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    position: relative;
+    height: 360px;
+    padding: 210px 11.4%; }
+    #templates .temp-wrapper .phone-pic {
+      height: 80%;
+      width: 20%;
+      display: block;
+      position: absolute;
+      top: 15%;
+      left: 40%; }
+    #templates .temp-wrapper .characteristics {
+      width: 400px;
+      height: 50%; }
+      #templates .temp-wrapper .characteristics .left-elem {
+        display: flex;
+        flex-direction: row; }
+      #templates .temp-wrapper .characteristics .right-elem {
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: right; }
+      #templates .temp-wrapper .characteristics .icon {
+        height: 70px;
+        width: 70px; }
+      #templates .temp-wrapper .characteristics .text {
+        margin: 0 20px; }
+        #templates .temp-wrapper .characteristics .text .h6 {
+          font-size: 14px;
+          letter-spacing: 1.2px; }
+        #templates .temp-wrapper .characteristics .text .description {
+          line-height: 23px;
+          color: #6c6c6c;
+          font-family: arial;
+          font-size: 15px; }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    #templates {
+      padding: 0; }
+      #templates .temp-wrapper {
+        padding: 3vw;
+        height: auto;
+        width: 100%;
+        box-sizing: border-box; }
+        #templates .temp-wrapper .phone-pic {
+          position: initial;
+          height: auto;
+          width: auto;
+          display: block; }
+        #templates .temp-wrapper .characteristics {
+          width: 100%;
+          height: auto;
+          margin-bottom: 20px; }
+          #templates .temp-wrapper .characteristics .text {
+            text-align: justify;
+            box-shadow: 0px 1px grey; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    #templates {
+      padding: 0; }
+      #templates .temp-wrapper {
+        padding: 5vh 2vw;
+        height: 685px;
+        flex-wrap: nowrap; }
+        #templates .temp-wrapper .phone-pic {
+          width: 45%;
+          height: auto;
+          display: block;
+          top: 6vh;
+          right: -4vw;
+          left: initial; } }
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1224px) {
+    #templates {
+      padding: 0; }
+      #templates .temp-wrapper {
+        flex-wrap: nowrap;
+        padding: 5vh 10%;
+        height: 680px; }
+        #templates .temp-wrapper .phone-pic {
+          width: 36vw;
+          height: auto;
+          display: block;
+          top: 6vh;
+          left: 54vw; } }
+  @media only screen and (min-device-width: 1224px) and (max-device-width: 1824px) {
+    #templates .temp-wrapper {
+      height: 500px;
+      padding: 65px 10vw;
+      flex-wrap: wrap; }
+      #templates .temp-wrapper .phone-pic {
+        left: 41%;
+        width: 18%;
+        top: 6%; }
+      #templates .temp-wrapper .characteristics {
+        width: 28vw; } }
+  @media only screen and (min-device-width: 1824px) {
+    #templates .temp-wrapper {
+      height: 625px;
+      padding: 65px 17%; }
+      #templates .temp-wrapper .phone-pic {
+        height: initial; }
+      #templates .temp-wrapper .characteristics {
+        width: 16vw; } }
+
+#news {
+  /* Smartphones (portrait and landscape) ----------- */ }
+  #news .wrapper {
+    padding: 130px 6.4%; }
+    #news .wrapper .articles-wrapper {
+      padding-top: 80px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      #news .wrapper .articles-wrapper .article {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 15px; }
+        #news .wrapper .articles-wrapper .article .icon {
+          height: 15px;
+          width: 15px; }
+        #news .wrapper .articles-wrapper .article .author, #news .wrapper .articles-wrapper .article .date {
+          font-family: arial;
+          font-size: 13px;
+          text-transform: capitalize;
+          padding-top: 18px;
+          margin-right: 35px; }
+        #news .wrapper .articles-wrapper .article h6 {
+          font-size: 14px; }
+        #news .wrapper .articles-wrapper .article .text {
+          color: #6c6c6c;
+          text-transform: initial;
+          letter-spacing: 1.5px;
+          font-family: arial;
+          font-size: 14px; }
+        #news .wrapper .articles-wrapper .article a {
+          color: #979797; }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    #news .wrapper {
+      padding: 1%; }
+      #news .wrapper .articles-wrapper {
+        padding: 1vw 3vw;
+        display: block;
+        width: 100vw;
+        box-sizing: border-box; }
+        #news .wrapper .articles-wrapper .article {
+          width: 94vw;
+          display: block;
+          margin: 0 0 15px;
+          padding-bottom: 25px;
+          box-shadow: 0px 1px grey; }
+          #news .wrapper .articles-wrapper .article .meta {
+            text-align: center; }
+            #news .wrapper .articles-wrapper .article .meta span {
+              font-family: arial; }
+          #news .wrapper .articles-wrapper .article .text {
+            letter-spacing: initial;
+            text-align: justify; }
+          #news .wrapper .articles-wrapper .article .meta, #news .wrapper .articles-wrapper .article .text {
+            margin-bottom: 10px; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    #news .wrapper {
+      padding: 4vh 2vw; }
+      #news .wrapper .articles-wrapper {
+        padding: 0; }
+        #news .wrapper .articles-wrapper .article {
+          width: 28vw; }
+          #news .wrapper .articles-wrapper .article .meta span {
+            margin-right: 2vw; }
+          #news .wrapper .articles-wrapper .article .text {
+            letter-spacing: initial;
+            text-align: justify; } }
+
+#quotes {
+  background-color: transparent;
+  /* Smartphones (portrait and landscape) ----------- */
+  /* iPads (portrait and landscape) ----------- */
+  /* Desktops and laptops ----------- */ }
+  #quotes .wrapper {
+    background: url(../img/quote-cont-bg.png) no-repeat center;
+    background-size: contain, cover;
+    height: 800px;
+    margin: 0;
+    padding: 0; }
+    #quotes .wrapper .quot-elem {
+      height: inherit;
+      width: 49%;
+      display: inline-block; }
+    #quotes .wrapper .left {
+      float: left;
+      padding: 8.6% 0;
+      box-sizing: border-box; }
+      #quotes .wrapper .left #slider {
+        position: relative;
+        height: 100%;
+        overflow: hidden;
+        -webkit-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: space-between;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: space-between;
+        justify-content: space-between; }
+        #quotes .wrapper .left #slider .q-marks {
+          display: block;
+          margin: 5rem 0;
+          height: 25px;
+          width: 25px;
+          opacity: 0.1; }
+        #quotes .wrapper .left #slider .slider-inner {
+          position: absolute;
+          top: 30%;
+          left: 0;
+          width: 400%;
+          height: 40%;
+          -webkit-transition: all 1s ease-out;
+          transition: all 1s ease-out; }
+          #quotes .wrapper .left #slider .slider-inner .slider-contents {
+            height: 100%;
+            padding: 2rem 1rem;
+            letter-spacing: 0.14rem;
+            text-align: center;
+            -webkit-box-flex: 1;
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            -webkit-flex-flow: column nowrap;
+            -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center; }
+            #quotes .wrapper .left #slider .slider-inner .slider-contents .slider-txt {
+              color: #1a2631;
+              font-family: arial;
+              font-size: 21px;
+              font-weight: bold;
+              text-transform: none;
+              line-height: 35px;
+              max-width: 65%;
+              margin: 0;
+              padding: 0;
+              border: 0;
+              vertical-align: center; }
+        #quotes .wrapper .left #slider .navigation-bar .slider-nav {
+          height: 8px;
+          width: 8px;
+          margin: 2rem 15px;
+          z-index: 10;
+          text-align: center;
+          outline: 6px solid #ccc;
+          outline-offset: -6px;
+          box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+          cursor: pointer;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; }
+          #quotes .wrapper .left #slider .navigation-bar .slider-nav:checked {
+            -webkit-animation: check 0.5s linear forwards;
+            animation: check 0.5s linear forwards; }
+    #quotes .wrapper .right {
+      float: right; }
+    #quotes .wrapper .bg {
+      background: url(../img/quote-title.png) no-repeat center, url(../img/quote-bg.jpg) no-repeat center; }
+@-webkit-keyframes check {
+  50% {
+    outline-color: #333;
+    box-shadow: 0 0 0 12px #333, 0 0 0 36px rgba(51, 51, 51, 0.2); }
+  100% {
+    outline-color: #333;
+    box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0); } }
+@keyframes check {
+  50% {
+    outline-color: #333;
+    box-shadow: 0 0 0 12px #333, 0 0 0 36px rgba(51, 51, 51, 0.2); }
+  100% {
+    outline-color: #333;
+    box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0); } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    #quotes .wrapper {
+      height: auto;
+      padding: 0;
+      display: flex;
+      -webkit-flex-flow: column-reverse nowrap;
+      -ms-flex-flow: column-reverse nowrap;
+      flex-flow: column-reverse nowrap; }
+      #quotes .wrapper .quot-elem {
+        float: none;
+        width: 100vw; }
+      #quotes .wrapper .left #slider .q-marks {
+        margin: 1vh 0; }
+      #quotes .wrapper .left #slider .slider-inner {
+        position: initial;
+        margin: 1vh 0;
+        width: 100vw;
+        height: auto;
+        -webkit-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap; }
+        #quotes .wrapper .left #slider .slider-inner .slider-contents {
+          height: auto;
+          padding: 1vh 1vw;
+          letter-spacing: initial; }
+          #quotes .wrapper .left #slider .slider-inner .slider-contents .slider-txt {
+            max-width: 80vw;
+            line-height: normal;
+            font-size: 12px;
+            font-weight: normal; }
+      #quotes .wrapper .left #slider .navigation-bar {
+        display: none; }
+      #quotes .wrapper .right {
+        background-size: contain;
+        width: 100vw;
+        height: 31vh; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    #quotes .wrapper {
+      display: flex;
+      flex-flow: column-reverse nowrap; }
+      #quotes .wrapper .quot-elem {
+        height: 50vh;
+        width: 100%; }
+      #quotes .wrapper .left #slider .q-marks {
+        margin: 0; }
+      #quotes .wrapper .left #slider .slider-inner {
+        top: 5vh; } }
+  @media only screen and (min-device-width: 1224px) {
+    #quotes .wrapper .quot-elem {
+      height: 100%; } }
+
+#contact {
+  height: 1060px;
+  /* Smartphones (portrait and landscape) ----------- */
+  /* iPads (portrait and landscape) ----------- */ }
+  #contact h3 {
+    padding-top: 130px; }
+  #contact form {
+    padding-top: 120px;
+    max-width: 964px;
+    margin: 0 auto;
+    /* FF 4-18 */
+    /* FF 19+ */
+    /* IE 10+ */ }
+    #contact form fieldset {
+      height: 65px; }
+    #contact form textarea {
+      height: 363px;
+      resize: none; }
+    #contact form fieldset, #contact form textarea {
+      width: 100%;
+      border: none;
+      margin-bottom: 30px;
+      padding: 0; }
+    #contact form [type="text"] {
+      display: inline-block;
+      width: 48%; }
+    #contact form [type="email"] {
+      width: 100%; }
+    #contact form [type="submit"] {
+      background-color: transparent;
+      color: #c0c0c0; }
+      #contact form [type="submit"]:hover {
+        background-color: #efefef;
+        cursor: pointer; }
+    #contact form [name="name"] {
+      float: left; }
+    #contact form [name="surname"] {
+      float: right; }
+    #contact form input {
+      height: 65px; }
+    #contact form input, #contact form textarea {
+      border: none;
+      background-color: #efefef;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      box-sizing: border-box;
+      padding: 15px 35px; }
+      #contact form input::-webkit-input-placeholder, #contact form textarea::-webkit-input-placeholder {
+        color: #c0c0c0;
+        line-height: 23px;
+        font-weight: bold;
+        font-size: 14px; }
+      #contact form input:-moz-placeholder, #contact form textarea:-moz-placeholder {
+        color: #c0c0c0;
+        line-height: 23px;
+        font-weight: bold;
+        font-size: 14px; }
+      #contact form input::-moz-placeholder, #contact form textarea::-moz-placeholder {
+        color: #c0c0c0;
+        line-height: 23px;
+        font-weight: bold;
+        font-size: 14px; }
+      #contact form input:-ms-input-placeholder, #contact form textarea:-ms-input-placeholder {
+        color: #c0c0c0;
+        line-height: 23px;
+        font-weight: bold;
+        font-size: 14px; }
+      #contact form input:hover, #contact form textarea:hover {
+        outline: none;
+        border-color: #c0c0c0; }
+    #contact form input:focus, #contact form textarea:focus {
+      outline: none;
+      border-color: #c0c0c0; }
+    #contact form input:focus::-webkit-input-placeholder {
+      color: transparent; }
+    #contact form input:focus:-moz-placeholder {
+      color: transparent; }
+    #contact form input:focus::-moz-placeholder {
+      color: transparent; }
+    #contact form input:focus:-ms-input-placeholder {
+      color: transparent; }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    #contact {
+      height: auto; }
+      #contact h3 {
+        padding-top: 2vh; }
+      #contact form {
+        padding: 1vh 2vw; }
+        #contact form fieldset, #contact form textarea {
+          -webkit-margin-start: 0;
+          width: 96vw;
+          height: 4vh;
+          margin-bottom: 1vh; }
+          #contact form fieldset input, #contact form textarea input {
+            height: inherit;
+            padding: 0 3vw; }
+        #contact form textarea, #contact form fieldset > [type="text"], #contact form [type="email"] {
+          padding: 1vh 2vw; }
+          #contact form textarea::-webkit-input-placeholder, #contact form fieldset > [type="text"]::-webkit-input-placeholder, #contact form [type="email"]::-webkit-input-placeholder {
+            line-height: 100%;
+            font-family: arial;
+            font-size: 10px; }
+          #contact form textarea:-moz-placeholder, #contact form fieldset > [type="text"]:-moz-placeholder, #contact form [type="email"]:-moz-placeholder {
+            line-height: 100%;
+            font-family: arial;
+            font-size: 10px; }
+          #contact form textarea::-moz-placeholder, #contact form fieldset > [type="text"]::-moz-placeholder, #contact form [type="email"]::-moz-placeholder {
+            line-height: 100%;
+            font-family: arial;
+            font-size: 10px; }
+          #contact form textarea:-ms-input-placeholder, #contact form fieldset > [type="text"]:-ms-input-placeholder, #contact form [type="email"]:-ms-input-placeholder {
+            line-height: 100%;
+            font-family: arial;
+            font-size: 10px; }
+        #contact form textarea {
+          height: 10vh; }
+        #contact form [type="submit"] {
+          padding: 0;
+          height: 40px;
+          width: 80px; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    #contact {
+      height: auto; }
+      #contact h3 {
+        padding-top: 5vh; }
+      #contact form {
+        padding: 5vh; } }
+
+footer {
+  margin-top: 30px;
+  /* Smartphones (portrait and landscape) ----------- */ }
+  footer .wrapper {
+    height: 140px;
+    padding: 50px 6.4%;
+    box-sizing: border-box; }
+    footer .wrapper .foot-elem {
+      width: 50%; }
+    footer .wrapper .left {
+      float: left; }
+      footer .wrapper .left .socials-wrapper {
+        margin-bottom: 17px; }
+        footer .wrapper .left .socials-wrapper img {
+          height: 15px;
+          width: 15px;
+          margin-right: 17px; }
+      footer .wrapper .left .credits {
+        line-height: 23px;
+        text-transform: none;
+        color: #5c5c5c;
+        line-height: 23px;
+        letter-spacing: 1.5px;
+        font-family: arial;
+        font-size: 14px; }
+    footer .wrapper .right {
+      float: right; }
+      footer .wrapper .right .button {
+        text-align: right; }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    footer .wrapper {
+      padding: 3vh 5vw;
+      height: 11vh; }
+      footer .wrapper .foot-elem {
+        width: auto; }
+      footer .wrapper .left {
+        width: 75%; }
+        footer .wrapper .left .socials-wrapper {
+          margin-bottom: 1vh; }
+        footer .wrapper .left .credits {
+          line-height: normal;
+          letter-spacing: normal;
+          font-size: 10px; }
+      footer .wrapper .rigth {
+        width: 25%; } }

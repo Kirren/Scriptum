@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Scriptum</title>
+		<description>Single page web template made for a contest.
+Theme: Scriptum. Author: Andrejs Hairulins - 2016©
+</description>
+		<link>scriptum.com/</link>
+		<atom:link href="scriptum.com/feed.xml" rel="self" type="application/rss+xml"/>
+		<pubDate>Sat, 09 Apr 2016 15:22:32 +0300</pubDate>
+		<lastBuildDate>Sat, 09 Apr 2016 15:22:32 +0300</lastBuildDate>
+		<generator>Jekyll v3.1.2</generator>
+	</channel>
+</rss>
